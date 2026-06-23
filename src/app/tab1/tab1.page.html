@@ -1,0 +1,96 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Guia de Restaurantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="banner-container">
+    <img src="assets/hambrugi.png" alt="Banner de hambúrguer e batata frita" />
+  </div>
+
+  <div class="welcome-section ion-text-center ion-padding">
+    <h2>Bem-vindo ao Guia de Restaurantes!</h2>
+    <p>Encontre os melhores restaurantes da sua cidade.</p>
+  </div>
+
+  <ion-grid class="ion-padding-horizontal">
+    <ion-row>
+      <ion-col size="6">
+        <div class="menu-card">
+          <div class="icon-container icon-red">
+            <ion-icon name="restaurant"></ion-icon>
+          </div>
+          <div class="card-text">
+            <h3>Restaurantes</h3>
+            <p>Ver todos</p>
+          </div>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div class="menu-card">
+          <div class="icon-container icon-orange">
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <div class="card-text">
+            <h3>Favoritos</h3>
+            <p>Meus favoritos</p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <div class="menu-card">
+          <div class="icon-container icon-green">
+            <ion-icon name="location"></ion-icon>
+          </div>
+          <div class="card-text">
+            <h3>Próximos</h3>
+            <p>Ver no mapa</p>
+          </div>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div class="menu-card">
+          <div class="icon-container icon-blue">
+            <ion-icon name="information-circle"></ion-icon>
+          </div>
+          <div class="card-text">
+            <h3>Sobre</h3>
+            <p>Mais informações</p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" selected>
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Início</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="favoritos">
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-label>Favoritos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="perfil">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>
